@@ -1539,6 +1539,11 @@ input[type=file]::file-selector-button:hover {
   line-height: 1.75rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-medium {
   font-weight: 500;
 }
