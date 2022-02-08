@@ -1162,10 +1162,6 @@ input[type=file]::file-selector-button:hover {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1368,11 +1364,6 @@ input[type=file]::file-selector-button:hover {
   fill: #ffffff;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1481,11 +1472,6 @@ input[type=file]::file-selector-button:hover {
   padding-bottom: 1.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1528,8 +1514,8 @@ input[type=file]::file-selector-button:hover {
   line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1723,20 +1709,20 @@ input[type=file]::file-selector-button:hover {
   transition-duration: 500ms;
 }
 
-.duration-\[2500ms\] {
-  transition-duration: 2500ms;
-}
-
-.duration-\[3000ms\] {
-  transition-duration: 3000ms;
+.duration-\[5000ms\] {
+  transition-duration: 5000ms;
 }
 
 .duration-\[4000ms\] {
   transition-duration: 4000ms;
 }
 
-.duration-\[5000ms\] {
-  transition-duration: 5000ms;
+.duration-\[2500ms\] {
+  transition-duration: 2500ms;
+}
+
+.duration-\[3000ms\] {
+  transition-duration: 3000ms;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@900&display=swap');
