@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faraz Kabir Khan</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <link rel="stylesheet" href="dist/output.css">
+
+    <script>
+        var bg_color;
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            // bg_color = '#05051e';
+        } else {
+            document.documentElement.classList.remove('dark');
+            // bg_color = '#fff';
+        }
+    </script>
+    <script>
+        let info = {
+            "23 January, 2022":"Our team got qualified for the SAR round in the URC-2022 competition",
+            "6 January, 2022": "Our team became shortlisted in the FS AI 2022(Driverless Vehicle)",
+            "3 January, 2022": "Graduated from Ahsanullah University of Science and Technology",
+            "December 2021": "Our rover got selected as the Top-5 industrial projects in IC4IR 2021",
+            "July 2021": "Left job at BiTechX",
+            "September 2020": "Collaborated with the MindcraftLabs to conduct a workshop",
+            "July 2020":"One <a class='text-t-red' target='_blank' href='https://www.youtube.com/playlist?list=PLlW3il1pE_XQUyGRwwlrAVd9MXt8KXeHz'>course</a> got published",
+            "January 2020": "Got promoted as a senior front-end web developer",
+            "November 2019": "Joined team AUST Mars rover",
+            "October 2019": "Co-founded Circuit Maesters",
+            "August 2019": "Became runners-up in a segment in <em>Codeware'19</em> ",
+            "January 2019": "Started working at BiTechX",
+            "July 2018": "Our team became runners-up in the University website developer hunt competition",
+            "Februay 2018": "One project got honorable mention in the  Intra AUST competition <em>Technomaina'18</em>"
+        }
+    </script>
+</head>
+
+<body class="dark:bg-t-black min-h-screen">
+
+    <nav
+        class=" fixed top-0 z-40 w-full backdrop-blur  lg:z-50 lg:border-b lg:border-t-black/10 dark:border-t-black/[0.06] bg-white/75 supports-backdrop-blur:bg-white/95 dark:bg-t-black/75">
+        <div class="container  flex flex-wrap justify-between items-center mx-auto">
+            <a href="/" class="flex ">
+                <img class="dark:hidden max-w-full w-32" src="images/logo.png" alt="logo">
+                <img class="dark:inline-block hidden max-w-full w-32" src="images/logo_darkmode.png" alt="logo">
+
+            </a>
+
+            <div class="ml-auto order-3 md:order-none hidden w-full md:block md:w-auto " id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center">
+                    <li class="w-full text-center">
+                        <a href="/" class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="w-full text-center">
+                        <a href="#"
+                            class="block py-2 pr-4 pl-3 md:text-t-red text-white bg-t-blue rounded md:bg-transparent "
+                            aria-current="page">Activities</a>
+                    </li>
+                    <li class="w-full text-center">
+                        <a href="/#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="w-full text-center">
+                        <a href="/#contact" class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+            <button id="theme-toggle" type="button"
+                class="ml-auto md:ml-8 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+            <button data-collapse-toggle="mobile-menu" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-t-black rounded-lg md:hidden hover:bg-t-gray focus:outline-none focus:ring-2 focus:ring-t-gray dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="mobile-menu-2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+        </div>
+    </nav>
+
+
+
+    <main class="">
+        <section class="pb-20 pt-24">
+            <div class="container">
+                <h2
+                    class="mb-10 font-bold text-t-blue text-4xl mt-10 mb-4 bg-gradient-to-l from-t-blue via-blue-700 to-t-red  grad-text ">
+                    Recent Activities
+                </h2>
+                <div class="pl-6">
+                    <ol id="activity" class="relative border-l border-gray-200 dark:border-gray-700"></ol>
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class=" py-5 border-t-2 border-gray-300 dark:border-gray-800">
+        <h1 class="grad-text text-2xl text-center bg-gradient-to-r from-t-blue to-t-red grad-anim">Designed and
+            Developed by Faraz Kabir Khan</h1>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- <script src="js/vanilla-tilt.min.js"></script> -->
+    <script src="node_modules/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
+    <script>
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Change the icons inside the button based on previous others
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        var themeToggleBtn = document.getElementById('theme-toggle');
+
+        themeToggleBtn.addEventListener('click', function () {
+
+            // toggle icons inside button
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            // if set via local storage previously
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                    //setVanta('#aaa','#fff');
+                    // Later, when you want to update an animation in progress with new options
+
+                    effect.setOptions({
+                        backgroundColor: '#05051e'
+                    });
+
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                    effect.setOptions({
+                        backgroundColor: '#fff'
+                    });
+
+                }
+
+                // if NOT set via local storage previously
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                    effect.setOptions({
+                        backgroundColor: '#05051e'
+                    });
+
+
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+
+                    effect.setOptions({
+                        backgroundColor: '#fff'
+                    });
+
+                }
+            }
+
+        });
+
+    </script>
+    <script>
+        let description = ''
+        let time = ''
+        var comp = (time, description) => `<li class="mb-10 ml-6">
+                        <span
+                            class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-t-blue rounded-full ring-0 ring-white sm:ring-8 dark:ring-gray-900 shrink-0 bg-gradient-to-l from-t-red to-t-blue">
+                            <svg class="w-3 h-3 text-white" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                        <h3 class="mb-1 text-lg font-semibold text-t-black dark:text-white">${description}</h3>
+                        <time
+                            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> ${time}</time>
+                        
+                    </li>`
+
+        
+        let activity = document.getElementById("activity");
+
+        for (var date in info) {
+            item = comp(date, info[date]);
+            activity.innerHTML += item;           
+        }
+    </script>
+</body>
+
+</html>

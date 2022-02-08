@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply block py-2 pr-4 pl-3 text-t-black  md:hover:bg-transparent md:border-0 md:hover:text-t-blue md:p-0 dark:text-gray-200 md:dark:hover:text-t-red transition duration-300 dark:hover:text-t-blue md:dark:hover:bg-transparent ;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&family=Poppins:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap'); */
+.alt-font{
+  font-family: 'Lato', sans-serif;
+}
+.signature-font{
+  font-family: 'Sacramento', cursive;
+}
+html{
+  font-family: 'Noto Sans Mono', monospace;
+  scroll-behavior: smooth;
+}
+.grad-text{
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.hover\:grad-text:hover{
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.grad-anim{
+  background-size: 200% auto;
+  animation: textShine 3s linear infinite alternate;
+
+}
+.box::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:50px; 
+  padding:10px; 
+  background:linear-gradient(45deg,red,blue); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+.dark [role="tab"].active, .dark [role="tab"].active:hover{
+  color: #180DDB;
+  border-color: #180DDB;
+}
+.border-gradient-to-r{
+  border-image: linear-gradient(to right, var(--tw-gradient-stops))
+}
+.border-gradient-to-l{
+  border-image: linear-gradient(to left, var(--tw-gradient-stops))
+}
+.b-slice{
+  border-image-slice: 1;
+}
+.b-slice-2{
+  border-image-slice: 1;
+}
+.tilt-elem{
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  overflow: hidden;
+}
+.tilt-elem>*{
+  transform: translateZ(20px);
+}
+@keyframes textShine {
+  from{
+    background-position: top left;
+  }
+  to {
+    background-position: top right ;
+    
+  }
+}
