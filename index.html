@@ -30,7 +30,8 @@
     <script>
         var bg_color;
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        //&& window.matchMedia('(prefers-color-scheme: dark)').matches --- add this in the if block for theme choice according to browser preference
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) )) {
             document.documentElement.classList.add('dark');
             bg_color = '#05051e';
         } else {
@@ -1198,16 +1199,17 @@
                     localStorage.setItem('color-theme', 'dark');
                     //setVanta('#aaa','#fff');
                     // Later, when you want to update an animation in progress with new options
-
+                    bg_color = '#05051e'
                     effect.setOptions({
-                        backgroundColor: '#05051e'
+                        backgroundColor: bg_color
                     });
 
                 } else {
                     document.documentElement.classList.remove('dark');
                     localStorage.setItem('color-theme', 'light');
+                    bg_color = '#fff';
                     effect.setOptions({
-                        backgroundColor: '#fff'
+                        backgroundColor: bg_color
                     });
                     //setVanta('#aaa','#05051e');
 
@@ -1219,8 +1221,9 @@
                     document.documentElement.classList.remove('dark');
                     localStorage.setItem('color-theme', 'light');
                     //setVanta('#aaa','#fff');;
+                    bg_color = '#fff';
                     effect.setOptions({
-                        backgroundColor: '#05051e'
+                        backgroundColor: bg_color
                     });
 
 
@@ -1228,9 +1231,9 @@
                     document.documentElement.classList.add('dark');
                     localStorage.setItem('color-theme', 'dark');
                     //setVanta('#aaa','#05051e');;
-
+                    bg_color = '#05051e';
                     effect.setOptions({
-                        backgroundColor: '#fff'
+                        backgroundColor: bg_color
                     });
 
                 }
