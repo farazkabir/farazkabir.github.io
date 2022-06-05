@@ -1,6 +1,7 @@
 let info = {
-    "23 January, 2022":"Our team got qualified for the SAR round in the URC-2022 competition",
-    "6 January, 2022": "Our team became shortlisted in the FS AI 2022(Driverless Vehicle)",
+    "March 2022":"Left AUST Mars Rover",
+    "23 January, 2022":"My team AUST Mars Rover got qualified for the SAR round in the URC-2022 competition",
+    "6 January, 2022": "My team Circuit Maesters became shortlisted in the FS AI 2022(Driverless Vehicle)",
     "3 January, 2022": "Graduated from Ahsanullah University of Science and Technology",
     "December 2021": "Our rover got selected as the Top-5 industrial projects in IC4IR 2021",
     "July 2021": "Left job at BiTechX",
