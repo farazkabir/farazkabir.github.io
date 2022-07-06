@@ -1,4 +1,5 @@
 let info = {
+    "June 2022":"Selected as one of the top 25 finalists in the Robi Datathon 2.0 competition out of 384 teams",
     "March 2022":"Left AUST Mars Rover",
     "23 January, 2022":"My team AUST Mars Rover got qualified for the SAR round in the URC-2022 competition",
     "6 January, 2022": "My team Circuit Maesters became shortlisted in the FS AI 2022(Driverless Vehicle)",
