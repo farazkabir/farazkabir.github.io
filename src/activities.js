@@ -1,4 +1,6 @@
 let info = {
+    "September 2022":"Our paper <em>Book Cover Synthesis from the Summary</em> got accepted at 19th ACS/IEEE International Conference on Computer Systems and Applications (AICCSA
+2022)",
     "June 2022":"Selected as one of the top 25 finalists in the Robi Datathon 2.0 competition out of 384 teams",
     "March 2022":"Left AUST Mars Rover",
     "23 January, 2022":"My team AUST Mars Rover got qualified for the SAR round in the URC-2022 competition",
