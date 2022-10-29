@@ -39,8 +39,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('@themesberg/flowbite/plugin'),
-    require('animated-tailwindcss'),
+    // require('@themesberg/flowbite/plugin'),
+    // require('animated-tailwindcss'),
     
 
 ],
