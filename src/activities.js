@@ -1,4 +1,5 @@
 let info = {
+   "7 December, 2022":"Presented two papers at the <em>19th ACS/IEEE International Conference on Computer Systems and Applications (AICCSA 2022)</em> in Abu Dhabi, UAE",
    "September 2022":" 'Book Cover Synthesis from the Summary' - a paper I co-authored got accepted at the <em>19th ACS/IEEE International Conference on Computer Systems and Applications (AICCSA 2022)</em>",
     "June 2022":"Selected as one of the top 25 finalists in the Robi Datathon 2.0 competition out of 384 teams",
     "March 2022":"Left AUST Mars Rover",
